@@ -25,7 +25,7 @@ yay -S telegram-desktop pamac-aur xed matcha-gtk-theme sardi-icons android-studi
 #install nvidia
 sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server-devel opencl-nvidia --noconfirm
 
-# Install pacaur
+# Install Android dependencies
 sudo pacman -S base-devel git wget multilib-devel cmake svn clang lzip patchelf inetutils python2-distlib
 # Install ncurses5-compat-libs, lib32-ncurses5-compat-libs, aosp-devel, xml2, and lineageos-devel
 for package in ncurses5-compat-libs lib32-ncurses5-compat-libs aosp-devel xml2 lineageos-devel; do
@@ -62,6 +62,7 @@ sudo pacman -S android-tools android-udev
 
 #create custom bash.rc as to not affect distro
 echo "[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal" >> ~/.bashrc
-cp My_Arch/.bashrc-personal ~/.bashrc-personal
+cp My_Arch/bashrc-personal ~/.bashrc-personal
+echo
 source ~/.bashrc
 
