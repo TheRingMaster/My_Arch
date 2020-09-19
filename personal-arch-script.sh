@@ -17,7 +17,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd
-rm -rf My_Arch/yay
+rm -rf yay
 
 #install my apps
 yay -S telegram-desktop pamac-aur xed matcha-gtk-theme sardi-icons android-studio fbreader mintstick-git  --noconfirm
