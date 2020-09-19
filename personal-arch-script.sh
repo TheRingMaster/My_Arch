@@ -62,6 +62,7 @@ sudo pacman -S android-tools android-udev
 
 #create custom bash.rc as to not affect distro
 echo "[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal" >> ~/.bashrc
+cd
 cp My_Arch/.bashrc-personal ~/.bashrc-personal
 echo
 source ~/.bashrc
