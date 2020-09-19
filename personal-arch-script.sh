@@ -23,7 +23,7 @@ rm -rf yay
 yay -S telegram-desktop pamac-aur xed matcha-gtk-theme sardi-icons android-studio fbreader mintstick-git  --noconfirm
 
 #install nvidia
-sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server-devel opencl-nvidia --noconfirm
+sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server-devel opencl-nvidia openssh nano --noconfirm
 
 # Install Android dependencies
 sudo pacman -S base-devel git wget multilib-devel cmake svn clang lzip patchelf inetutils python2-distlib
