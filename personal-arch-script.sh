@@ -16,7 +16,7 @@ sudo pacman -S git --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-cd
+cd..
 rm -rf yay
 
 #install my apps
@@ -59,11 +59,3 @@ sudo chmod a+rx /usr/local/bin/repo
 
 echo -e "Installing platform tools & udev rules for adb!"
 sudo pacman -S android-tools android-udev
-
-#create custom bash.rc as to not affect distro
-echo "[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal" >> ~/.bashrc
-cd
-cp My_Arch/.bashrc-personal ~/.bashrc-personal
-echo
-source ~/.bashrc
-
