@@ -20,7 +20,10 @@ cd..
 rm -rf yay
 
 #install my apps
-yay -S telegram-desktop pamac-aur xed matcha-gtk-theme sardi-icons android-studio fbreader mintstick-git picom  --noconfirm
+yay -S telegram-desktop pamac-aur xed matcha-gtk-theme sardi-icons android-studio fbreader mintstick-git picom google-chrome --noconfirm
+
+#install a few dependencies
+sudo pacman -S aosp-devel lzop pngcrush imagemagick --noconfirm
 
 #install nvidia
 sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server-devel opencl-nvidia openssh nano --noconfirm
