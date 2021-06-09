@@ -14,7 +14,7 @@ sudo pacman -S git --noconfirm
 
 #install yay
 git clone https://aur.archlinux.org/yay.git
-cd yay
+cd yay.git
 makepkg -si
 cd..
 rm -rf yay
