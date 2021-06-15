@@ -12,21 +12,11 @@ sudo pacman -Syyu
 #install git
 sudo pacman -S git --noconfirm
 
-#install yay
-git clone https://aur.archlinux.org/yay.git
-cd yay.git
-makepkg -si
-cd..
-rm -rf yay
-
 #install my apps
-yay -S telegram-desktop pamac-aur xed matcha-gtk-theme sardi-icons android-studio fbreader mintstick-git picom google-chrome --noconfirm
+yay -S matcha-gtk-theme sardi-icons android-studio fbreader mintstick-git picom 
 
 #install a few dependencies
-sudo pacman -S aosp-devel lzop pngcrush imagemagick --noconfirm
-
-#install nvidia
-sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server-devel opencl-nvidia openssh nano --noconfirm
+sudo pacman -S lzop pngcrush imagemagick 
 
 # Install Android dependencies
 sudo pacman -S base-devel git wget multilib-devel cmake svn clang lzip patchelf inetutils python2-distlib
